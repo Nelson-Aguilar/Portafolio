@@ -28,7 +28,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
     event.preventDefault();
 
-    fetch("https://formsubmit.co/alex.aguilar.sv@outlook.es", {target:"_blank" action:"https://formsubmit.co/alex.aguilar.sv@outlook.es" method:"POST"}).then((respuesta) => {
+    fetch({<form class="contacto-box-form" target="_blank" action="https://formsubmit.co/alex.aguilar.sv@outlook.es" method="POST">}).then((respuesta) => {
         document.querySelector("form").reset();
         mensajeEnviado();
     }).catch((error) => alert(error));

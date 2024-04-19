@@ -25,7 +25,7 @@ document.querySelector(".enviar").addEventListener("click", (event) =>{
 
 /*escucha el formulario. Si hace submit, hace un preventdefaul para que no refresque la pantalla. Valida las entradas e imprime mensaje de "enviado"*/
 
-document.querySelector("form").addEventListener("submit", (event) => {
+/*document.querySelector("form").addEventListener("submit", (event) => {
 
     event.preventDefault();
 
@@ -34,7 +34,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
         mensajeEnviado();
     }).catch((error) => alert(error));
     
-});
+});*/
 
 
 /*escucha el formulario. Si hace submit, hace un preventdefaul para que no refresque la pantalla. Valida las entradas e imprime mensaje de "enviado"*/

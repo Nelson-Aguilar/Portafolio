@@ -29,21 +29,9 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
     event.preventDefault();
 
-    fetch("https://formsubmit.co/alex.aguilar.sv@outlook.es", {method : "POST",
-    body: new FormData(event.target)
-    }).then((respuesta) => {
-        document.querySelector("form").reset();
-        mensajeEnviado();
-    }).catch((error) => alert(error));
-    
-});
-/*document.querySelector("form").addEventListener("submit", (event) => {
-
-    event.preventDefault();
-
     fetch("https://formsubmit.co/alex.aguilar.sv@outlook.es", {method : "POST"}).then((respuesta) => {
         document.querySelector("form").reset();
         mensajeEnviado();
     }).catch((error) => alert(error));
     
-});*/
+});

@@ -27,11 +27,7 @@ document.querySelector(".enviar").addEventListener("click", (event) =>{
 
 document.querySelector("form").addEventListener("submit", (event) => {
 
-    event.preventDefault();
-
-    fetch("https://formsubmit.co/alex.aguilar.sv@outlook.es", {method : "POST",
-    body: new FormData(event.target)
-    }).then((respuesta) => {
+    event.preventDefault().then((respuesta) => {
         document.querySelector("form").reset();
         mensajeEnviado();
     }).catch((error) => alert(error));

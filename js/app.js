@@ -35,3 +35,20 @@ document.querySelector("form").addEventListener("submit", (event) => {
     }).catch((error) => alert(error));
     
 });
+
+
+/*escucha el formulario. Si hace submit, hace un preventdefaul para que no refresque la pantalla. Valida las entradas e imprime mensaje de "enviado"*/
+
+/*document.querySelector("form").addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    fetch("https://formsubmit.co/alex.aguilar.sv@outlook.es", {method : "POST",
+    body: new FormData(event.target)
+    }).then((respuesta) => {
+        document.querySelector("form").reset();
+        mensajeEnviado();
+    }).catch((error) => alert(error));
+    
+
+});*/
